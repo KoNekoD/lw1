@@ -1,24 +1,22 @@
 <?php
 
-declare(strict_types=1);
+namespace App\Http\HomeControllers;
 
-namespace App\Http\Controllers;
+use Illuminate\Http\Request;
+use Illuminate\View\View;
 
-use Illuminate\Contracts\Foundation\Application;
-use Illuminate\Contracts\View\Factory;
-use Illuminate\Contracts\View\View;
 
 class HomeController extends Controller
 {
-    public function __construct()
+    public function index() : View
     {
-    }
-
-    public function __invoke(): Factory|View|Application
-    {
-        return view('welcome', [
-            'HelloText' => 'Hello user, it is sample text ...',
-            'DateText' => date('Y-m-d - h:i:s')
+        return view('home', [
+            'bookone' => 'Под куполом ',
+            'discriptionone' =>'тутуутут',
+            'booktwo' => 'Кэрри',
+            'discriptiontwo' =>'тутутут',
+            'bookthree' => 'Бессонница',
+            'discriptionthree' =>'тутутут',
         ]);
     }
 }

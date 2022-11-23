@@ -1,0 +1,35 @@
+.my_boks {
+    position: absolute;
+    display: block;
+    padding: 0;
+    text-align: center;
+}
+.my_boks1, .my_boks2, .my_boks3 {
+	margin: 20px;
+	background-color: #f9aaaa; border: 3px dotted #f86565;
+	padding: 20px 10px;
+	width: calc(33% - 24px);
+	display: inline-block;
+	
+}
+.block{
+    border:4px solid #f86565; 
+    width:217px; 
+    float:left; 
+    margin-right:5px;
+    margin-bottom:20px; 
+    height:332px; 
+    overflow:hidden;
+}
+.wrap {
+	width: 1000px;
+	margin-top: 20px;
+	position: absolute;
+	left: 55%;
+	margin-left: -500px;
+}
+body{
+	background-color: #d4766a81;
+}
+	
+	
